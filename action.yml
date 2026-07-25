@@ -1,10 +1,10 @@
-name: 'feishu bot action'
-description: 'message by Feishu bot, super tiny. run one time cost 1s. support linux macos and windows, base node runner not by docker. Supports text, post, image, share_chat, interactive (card) message types.'
-author: 'foxundermoon'
+name: 'Lark bot action'
+description: 'Lark/FeiShu message bot supports text, post, image, share_chat, interactive (card) message types.'
+author: 'hu-qi'
 inputs:
   url:
     required: true
-    description: 'Feishu webhook URL'
+    description: 'Lark/FeiShu webhook URL'
   msg_type:
     required: false
     description: |
@@ -13,7 +13,7 @@ inputs:
       - post: Rich text message
       - image: Image message
       - share_chat: Share chat card
-      - interactive: Interactive card message (Feishu Card)
+      - interactive: Interactive card message (Lark/FeiShu Card)
       See: https://open.feishu.cn/document/client-docs/bot-v3/add-custom-bot
     default: text
   content:
